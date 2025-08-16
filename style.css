@@ -6,6 +6,7 @@
 }
 html{
     scroll-behavior: smooth;
+    transition: 0.5s;
 }
 body{
     background: #080808;
@@ -24,10 +25,15 @@ body{
     padding: 10px 10% 10px 5%;
 }
 nav{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 35px;
+    position: fixed;
+    background-color: #080808;
+    z-index: 10;
 }
 .logo{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -65,12 +71,15 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
 .header-text{
     position: absolute;
     margin-top: 12%;
     font-size: 30px;
+    line-height: 100px;
 }
 .header-text h1{
+    /* line-height: normal; */
     font-size: 60px;
     margin-top: 20px;
     font-weight: 600;
@@ -96,6 +105,8 @@ nav ul li a:hover::after{
       display: flex;
       align-items: center;
       color: #C0C0C0;
+      line-height: normal;
+      margin-top: 15px;
 }
 #typewriter {
       border-right: 3px solid white;
@@ -387,27 +398,36 @@ nav .fa-solid{
 @media only screen and (max-width:600px) {
      #header{
         background-image: url(images/phone-background.png);
+        
     }
     .header-text{
-        margin-top: 50%;
+        margin-top: 40%;
         font-size: 16px;
     }
     .header-text h1{
-        font-size: 25px;
+        width: 60%;
+        font-size: 30px;
+        line-height: 50px;
     }
     #typewriter{
-        font-size: 18px;
+        width: auto;
+        line-height: normal;
+        margin-top: 12%;
+        font-size: 20px;
     }
     nav .fa-solid{
     display: block;
     font-size: 30px;
+}
+nav{
+    padding: 0 20px;
 }
 nav ul{
     background:#ff004f;
     position: fixed;
     top: 0;
     right: -200px;
-    width: 200px;
+    width: 175px;
     height: 100vh;
     padding-top: 50px;
     z-index: 2;
@@ -416,11 +436,13 @@ nav ul{
 nav ul li{
     display: block;
     margin: 25px;
+    text-align: center;
 }
 nav ul li .fa-solid,#close{
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 10px;
+    font-size: 30px;
     cursor: pointer;
 }
 .subtitle{
@@ -445,6 +467,36 @@ nav ul li .fa-solid,#close{
 .copyright{
     font-size: 12px;
 }
+ .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        grid-gap: 25px;
+        margin-top: 50px;
+    }
+ .services-list div{
+        background: #262626;
+        padding: 35px;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background 0.5s, transform 0.5s;
+    }
+    .services-list div i{
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    .services-list div h2{
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+    .services-list div a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-top: 10px;
+        display: inline-block;
+    }
 
 }
 #msg{

@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <p class="logo"><a>P</a>ratham</p>
+    <nav>
+            <p class="logo"><a>P</a>ratham <a>K</a>ataria</p>
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Skills</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#services" onclick="closemenu()">Skills</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
                     <i class="fa-solid fa-xmark" id="close" onclick="closemenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
+    <div id="header">
+        <div class="container">
+            
             <div class="header-text">
                 <h1>Hi, I'm <span>Pratham</span><br>Kataria from <span id="India">India</span></h1>
                 <div class="typewriter"><h1 id="typewriter"></h1></div>
@@ -73,6 +74,7 @@
         </div>
         <!-- -------------services--------------- -->
         <div id="services">
+            <br>
             <div class="container">
             <h1 class="subtitle">My Skills</h1>
             <div class="services-list">
@@ -100,6 +102,7 @@
 
         <!-- ----------portfolio----------- -->
         <div id="portfolio">
+            <br>
             <div class="container">
             <h1 class="subtitle">My Projects</h1>
             <div class="work-list">
@@ -133,6 +136,7 @@
             </div>
             <!-- -----------contact------------- -->
             <div id="contact">
+                <br><br>
                 <div class="container">
                     <div class="row">
                         <div class="contact-left">
