@@ -33,13 +33,12 @@
             </div>
         </div>
         </div>
-
         <!-- ---------------about------------ -->
         <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <img src="images/user-cartoon.png" alt="">
+                        <img src="images/user-cartoon.webp" alt="">
                     </div>
                     <div class="about-col-2">
                         <h1 class="subtitle">About Me</h1>
@@ -173,7 +172,7 @@
 
                 form.addEventListener('submit', e => {
                 e.preventDefault();
-                msg.innerText="Thanks for your message! I’ll get back to you soon.";
+                msg.innerText="Thanks for your message! I’ll get back to you soon on mail.";
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
                 setTimeout(()=>{
