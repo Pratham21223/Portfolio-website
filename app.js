@@ -60,4 +60,3 @@ let tabLinks=document.querySelectorAll('.tab-links')
     function closemenu(){
       sidemenu.style.right="-200px";
     }
-
