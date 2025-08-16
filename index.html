@@ -172,14 +172,14 @@
                 const msg=document.getElementById("msg");
 
                 form.addEventListener('submit', e => {
-                e.preventDefault()
-                form.reset();
+                e.preventDefault();
                 msg.innerText="Thanks for your message! I’ll get back to you soon.";
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
                 setTimeout(()=>{
-                    msg.innerText=""
+                form.reset();
                 },5000)
+                msg.innerText=""
             })
             .catch(error => console.error('Error!', error.message))
             })
