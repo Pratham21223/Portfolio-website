@@ -1,10 +1,9 @@
 const texts = [
     "Frontend Developer.",
+    "Backend Developer.",
     "Tech Enthusiast.",
     "Problem Solver.",
-    "Terminal.",
     "Git & Github.",
-    "Bootstrap.",
     "Welcome to my Portfolio!"
     ];
     let textIndex = 0;
