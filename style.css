@@ -259,18 +259,18 @@ nav ul li a:hover::after{
     color: #999;
     font-style: italic;
 }
-#skills, #Projects {
+#skills, #Achievements {
     padding: 0; 
     max-width: 600px;
 }
 
-#skills ul, #Projects ul {
+#skills ul, #Achievements ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#skills ul li, #Projects ul li {
+#skills ul li, #Achievements ul li {
     background: #262626;
     border-radius: 8px;
     padding: 12px 15px;
@@ -278,13 +278,13 @@ nav ul li a:hover::after{
     box-shadow: 0 0 10px rgba(243, 33, 100, 0.2);
 }
 
-#skills ul li span, #Projects ul li span {
+#skills ul li span, #Achievements ul li span {
     font-weight: 600;
     font-size: 18px;
     color: #f32164;
 }
 
-#skills ul li br + text, #Projects ul li br + text {
+#skills ul li br + text, #Achievements ul li br + text {
     font-size: 16px;
     color: #ddd;
 }
@@ -510,7 +510,7 @@ nav{
     padding: 0 20px;
 }
 nav ul{
-    background:#f32164;
+    background: linear-gradient(90deg, #232526, #414345);
     position: fixed;
     top: 0;
     right: -200px;
@@ -529,7 +529,7 @@ nav ul li .fa-solid,#close{
     position: absolute;
     top: 15px;
     left: 10px;
-    font-size: 30px;
+    font-size: 27px;
     cursor: pointer;
 }
 .subtitle{

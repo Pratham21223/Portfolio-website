@@ -1,16 +1,15 @@
 const texts = [
-    "Frontend Developer.",
-    "Backend Developer.",
-    "Tech Enthusiast.",
+    "MERN - Stack Developer.",
     "Problem Solver.",
-    "Git & Github.",
+    "Open Source Contributor.",
+    "Tech Enthusiast.",
     "Welcome to my Portfolio!"
     ];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
-    const typingSpeed = 50;
-    const erasingSpeed = 50;
+    const typingSpeed = 25;
+    const erasingSpeed = 25;
     const delayBetween = 1000;
     function typeWriter() {
       const element = document.getElementById("typewriter");
